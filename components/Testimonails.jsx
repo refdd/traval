@@ -17,7 +17,6 @@ const handelLeftArrow=()=>{
 const handelRightArrow=()=>{
   selected === Tlenght - 1 ?setSelected(0) :setSelected((prev) => prev + 1)
 }
-console.log(selected)
   return (
     <div style={{ backgroundImage: `url(${bg.src})` }} className="py-16 bg-[#e6eef5]  ">
       <HeaderSection
@@ -45,8 +44,8 @@ console.log(selected)
 
           {/* content  */}
           <div className="py-4 mx-2">
-            <div className="  ml-7  text-xl font-serif flex  gap-1  text-[#777] capitalize w-full">
-               <FaQuoteRight size={60} className='mt-[-10px]'  color="#029e9d"/> <p className="">{testimonialsData[selected].review}</p>
+            <div className="  ml-7  text-xl font-serif flex  gap-1  text-[#777] capitalize ">
+               <FaQuoteRight size={60} className='mt-[-10px]'  color="#029e9d"/> <p  className=" ">{testimonialsData[selected].review}</p>
             </div>
           </div>
       

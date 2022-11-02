@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import loge from "../public/assets/images/logo.png"
+import loge from "../public/assets/images/logo-new.svg"
 import {AiOutlineMenu , AiFillCloseCircle} from "react-icons/ai"
 function NavBar() {
     const [menueBar , setmenuBar]= useState(false)

@@ -20,7 +20,7 @@ function SelectPackagess() {
         {/* header seaction */}
         <div className='flex flex-col gap-3 justify-center items-center'>
             <h4 className='text-xl font-medium font-serif capitalize text-[#fdc703]'> Bucket List   </h4>
-            <h2 className='text-3xl font-bold font-serif capitalize text-center'>Top Up Your <span className='text-[#029e9d]'> Buckest Lists</span> </h2>
+            <h2 className='text-3xl font-bold font-serif capitalize text-center'>Egypt River <span className='text-[#029e9d]'> Nile Cruises</span> </h2>
             <p className='text-center text-[#777]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione earum corrupti quasi vitae accusamus.</p>
         </div>
         {/* tags Section */}

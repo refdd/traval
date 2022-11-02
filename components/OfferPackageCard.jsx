@@ -89,7 +89,7 @@ function OfferPackageCard() {
             </p>
                <p className=" relative font-bold font-mono text-lg text-[#777] text-center w-10">
               {item.price}  
-                <span className=" absolute w-full h-[3px] bg-[#777] top-[50%]  left-0   " ></span>
+                <span className=" absolute w-full h-[3px] bg-red-500 top-[50%]  left-0   " ></span>
                </p>
           </div>
           {/* border botton  */}
