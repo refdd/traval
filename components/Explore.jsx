@@ -14,7 +14,7 @@ function Explore() {
           {/* content  */}
           <div className="flex flex-col gap-4  p-7 bg-[#029e9d] mt-0 h-3/5 md:h-full md:w-2/4 md:py-20  md:gap-6  ">
             <h2 className="text-xl text-[#fff] text-center font-bold  capitalize font-serif md:text-2xl md:text-left ">
-              Love Where Your're Going
+              Love Where Your're Goingyou&apos;re free
             </h2>
             <h1 className="text-2xl font-serif font-bold capitalize
              text-[#fdc703] text-center md:text-5xl md:leading-[3.5rem] md:font-extrabold  md:text-left ">
@@ -46,7 +46,7 @@ function Explore() {
          {showvideo ? <div className="  fixed top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-50%]  h-full bg-[#0000007a] p-4 w-full z-[1000000] ">
             <span className="cursor-pointer  absolute top-[30%] right-5 rounded-full p-3 md:right-[84px] md:top-[29%]"><AiFillCloseCircle size={30} color='#fff' onClick={() => setShowvideo(false)}  /></span>
              <div className=" absolute top-[35%] right-5 p-3 w-full   ">
-             <iframe class=" w-full h-[299px]   ml-5 md:h-[350px]  md:m-auto md:w-[89%] " src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+             <iframe class=" w-full h-[299px]   ml-5 md:h-[350px]  md:m-auto md:w-[89%] " src=""></iframe>
              </div>
           </div> : ""}
           
