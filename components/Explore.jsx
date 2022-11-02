@@ -4,7 +4,6 @@ import { AiFillPlayCircle  , AiFillCloseCircle} from "react-icons/ai";
 import { useState } from "react";
 function Explore() {
   const [showvideo, setShowvideo] = useState(false);
-  console.log(showvideo);
   return (
     <div className=" relative container mx-auto px-4  py-14  ">
       <div

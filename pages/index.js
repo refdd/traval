@@ -21,16 +21,9 @@ export default function Home() {
         <SelectPackagess />
         <MultiPackage package={true} />
       </section>
-
-      <section className=" md:pt-16   pt-11   bg-[#e6eef5]  ">
-        <SelectPackagess />
-        <MultiPackage package={true} />
-      </section>
-
       <section className="  pt-11  md:pt-16  bg-[#e6eef5]  ">
         <MultiPackage offerSection={true} />
       </section>
-
       <PerfectTour />
 
       <Testimonails />
