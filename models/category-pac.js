@@ -1,7 +1,7 @@
 class Category {
     constructor( id , type , color){
-this.id= id ;
-  this.type = type ;
+    this.id= id ;
+     this.type = type ;
     }
 }
 export default Category;

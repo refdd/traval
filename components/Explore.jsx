@@ -1,10 +1,12 @@
 import React from "react";
 import bg from "../public/assets/images/bg4.jpg";
-import { AiFillPlayCircle  , AiFillCloseCircle} from "react-icons/ai";
+import { AiFillPlayCircle, AiFillCloseCircle } from "react-icons/ai";
 import { useState } from "react";
+import Partners from "./Partners";
 function Explore() {
   const [showvideo, setShowvideo] = useState(false);
   return (
+  <>
     <div className=" relative container mx-auto px-4  py-14  ">
       <div
         style={{ backgroundImage: `url(${bg.src})` }}
@@ -16,8 +18,10 @@ function Explore() {
             <h2 className="text-xl text-[#fff] text-center font-bold  capitalize font-serif md:text-2xl md:text-left ">
               Love Where Your're Goingyou&apos;re free
             </h2>
-            <h1 className="text-2xl font-serif font-bold capitalize
-             text-[#fdc703] text-center md:text-5xl md:leading-[3.5rem] md:font-extrabold  md:text-left ">
+            <h1
+              className="text-2xl font-serif font-bold capitalize
+             text-[#fdc703] text-center md:text-5xl md:leading-[3.5rem] md:font-extrabold  md:text-left "
+            >
               <span className="text-[#fff]">Explore Your Life,</span> Travel
               Where You Want!
             </h1>
@@ -42,15 +46,27 @@ function Explore() {
           </div>
 
           {/*vido popup   */}
-    
-         {showvideo ? <div className="  fixed top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-50%]  h-full bg-[#0000007a] p-4 w-full z-[1000000] ">
-            <span className="cursor-pointer  absolute top-[30%] right-5 rounded-full p-3 md:right-[84px] md:top-[29%]"><AiFillCloseCircle size={30} color='#fff' onClick={() => setShowvideo(false)}  /></span>
-             <div className=" absolute top-[35%] right-5 p-3 w-full   ">
-             <iframe class=" w-full h-[299px]   ml-5 md:h-[350px]  md:m-auto md:w-[89%] " src=""></iframe>
-             </div>
-          </div> : ""}
-          
-           
+
+          {showvideo ? (
+            <div className="  fixed top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-50%]  h-full bg-[#0000007a] p-4 w-full z-[1000000] ">
+              <span className="cursor-pointer  absolute top-[30%] right-5 rounded-full p-3 md:right-[84px] md:top-[29%]">
+                <AiFillCloseCircle
+                  size={30}
+                  color="#fff"
+                  onClick={() => setShowvideo(false)}
+                />
+              </span>
+              <div className=" absolute top-[35%] right-5 p-3 w-full   ">
+                <iframe
+                  class=" w-full h-[299px]   ml-5 md:h-[350px]  md:m-auto md:w-[89%] "
+                  src=""
+                ></iframe>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
+
           {/* buttom puse  */}
 
           <div className="  flex flex-col items-center justify-center h-2/5 md:w-2/4">
@@ -65,7 +81,10 @@ function Explore() {
           </div>
         </div>
       </div>
+     
     </div>
+    <Partners/>
+    </>
   );
 }
 

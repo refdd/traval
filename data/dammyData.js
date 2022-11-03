@@ -4,6 +4,7 @@ import imageAfater from "../public/assets/images/img1.jpg";
 import BlogsImage from "../public/assets/images/trending12.jpg";
 import slagImage from "../public/assets/images/1.jpg";
 import Blogs from "../models/blogs";
+import FandQ from "../models/faq";
 import Category from "../models/category-pac";
 export const CATEGORY = [
   new Category(1, "Cycling"),
@@ -12,6 +13,35 @@ export const CATEGORY = [
   new Category(4, "Hiking"),
   new Category(5, "Wildlife"),
 ];
+
+const FaQ = {
+ 
+  rows: [
+      {
+          title: "Lorem ipsum dolor sit amet,",
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+            ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
+            In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
+            Fusce sed commodo purus, at tempus turpis.`,
+      },
+      {
+          title: "Nunc maximus, magna at ultricies elementum",
+          content:
+              "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+      },
+      {
+          title: "Curabitur laoreet, mauris vel blandit fringilla",
+          content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
+          Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
+          Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
+          Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      },
+      {
+          title: "What is the package version",
+          content: <p>current version is 1.2.1</p>,
+      },
+  ],
+};
 
 export const blogsData = [
   new Blogs(
@@ -39,7 +69,7 @@ export const blogsData = [
     slagImage
   ),
   new Blogs(
-   " b4",
+    " b4",
     BlogsImage,
     "Inspire Runner With Autism Graces Of Women's Running",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
@@ -47,7 +77,7 @@ export const blogsData = [
     slagImage
   ),
   new Blogs(
-   " b5",
+    " b5",
     BlogsImage,
     "Services To Grow Your Business Sell Affiliate Products",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",

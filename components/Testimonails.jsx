@@ -6,6 +6,7 @@ import bg from "../public/assets/images/testimonial.png";
 import { AiOutlineRight ,AiOutlineLeft } from "react-icons/ai"
 import {FaQuoteRight } from "react-icons/fa"
  import {testimonialsData} from "../data/dammyData"
+import Link from "next/link";
 function Testimonails() {
   const [selected, setSelected] = useState(0); 
   const [animation, setAnimation] = useState(false); 
@@ -56,13 +57,17 @@ const handelRightArrow=()=>{
         </div>
         </div>
         {/* image section  */}
-        <div className="py-7">
+        <div className="py-7 cursor-pointer">
+          <Link href={'https://www.youtube.com/watch?v=0gxgHRda7Do'}>
+          <a target="_blank">
           <Image
           src={testimonialImage}
           width={500}
           height={500}
           layout={"intrinsic"}
           />
+          </a>
+          </Link>
          </div>
       </div>
     </div>
