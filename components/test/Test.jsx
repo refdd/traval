@@ -6,7 +6,7 @@ function Test() {
   return (
     <div className=" relative container max-w-[1400px]  ">
       <ul className="flex overflow-x-scroll snap-mandatory scrollbar-hide ">
-        <li class=" card gap-3 rounded-2xl overflow-hidden ">
+        <li className=" card gap-3 rounded-2xl overflow-hidden ">
           <div className="w-full bg-contain ">
             <Image
               src={instgramImage}
@@ -17,7 +17,7 @@ function Test() {
             />
           </div>
         </li>
-        <li class=" card gap-3 rounded-2xl overflow-hidden ">
+        <li className=" card gap-3 rounded-2xl overflow-hidden ">
           <div className="w-full bg-contain ">
             <Image
               src={instgramImage}
@@ -28,7 +28,7 @@ function Test() {
             />
           </div>
         </li>
-        <li class=" card gap-3 rounded-2xl overflow-hidden ">
+        <li className=" card gap-3 rounded-2xl overflow-hidden ">
           <div className="w-full bg-contain ">
             <Image
               src={instgramImage}
@@ -39,7 +39,7 @@ function Test() {
             />
           </div>
         </li>
-        <li class=" card gap-3 rounded-2xl overflow-hidden ">
+        <li className=" card gap-3 rounded-2xl overflow-hidden ">
           <div className="w-full bg-contain ">
             <Image
               src={instgramImage}
@@ -50,7 +50,7 @@ function Test() {
             />
           </div>
         </li>
-        <li class=" card gap-3 rounded-2xl overflow-hidden ">
+        <li className=" card gap-3 rounded-2xl overflow-hidden ">
           <div className="w-full bg-contain ">
             <Image
               src={instgramImage}
@@ -61,7 +61,7 @@ function Test() {
             />
           </div>
         </li>
-        <li class=" card gap-3 rounded-2xl overflow-hidden ">
+        <li className=" card gap-3 rounded-2xl overflow-hidden ">
           <div className="w-full bg-contain ">
             <Image
               src={instgramImage}
