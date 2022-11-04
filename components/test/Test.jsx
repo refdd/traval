@@ -73,7 +73,7 @@ function Test() {
           </div>
         </li>
       </ul>
-      <a target="_blank"href="https://www.instagram.com/">
+      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
       <div className=" flex justify-center items-center w-full h-full absolute top-0 left-0 cursor-pointer">
         <div className=" flex  bg-white px-9 py-4 rounded-xl w-auto ring-2  ">
         <span> <BsInstagram size={24} color='#1a1a1a'/> </span>
