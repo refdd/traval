@@ -2,6 +2,7 @@ import Image from "next/image";
 import BookingSearch from "../components/BookingSearch";
 import Explore from "../components/Explore";
 import FandQ from "../components/FandQ";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeaderSection from "../components/helper/HeaderSection";
 import MultiPackage from "../components/MultiPackage";
@@ -41,6 +42,8 @@ export default function Home() {
 
       <Explore />
       <FandQ />
+      
+      <Footer/>         
     </div>
   );
 }
