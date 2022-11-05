@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import { useStateContext } from '../contexts/ContextProvider';
 import { CATEGORY} from "../data/dammyData"
+import HeaderSection from './helper/HeaderSection';
 import MultiPackage from './MultiPackage';
 
 
@@ -18,17 +19,19 @@ function SelectPackagess() {
   return (
     <div className=' w-full bg-[#e6eef5] '>
         {/* header seaction */}
-        <div className='flex flex-col gap-3 justify-center items-center'>
-            <h4 className='text-xl font-medium font-serif capitalize text-[#fdc703]'> Bucket List   </h4>
-            <h2 className='text-3xl font-bold font-serif capitalize text-center'>Egypt River <span className='text-[#029e9d]'> Nile Cruises</span> </h2>
-            <p className='text-center text-[#777]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione earum corrupti quasi vitae accusamus.</p>
-        </div>
+        <HeaderSection
+        titel="Bucket List   "
+        partOne="Egypt River"
+        partTwo=" Nile Cruises"
+        decs="The best Nile Cruise trip with the best prices. Choose your cruise route from Luxor to Aswan or Cruise Lake Nasser. "
+        />
+       
         {/* tags Section */}
         <div className=' w-full h-[auto] '>
-            <ul className='flex flex-wrap gap-2 justify-center items-center my-6 '>
+            <ul className='flex flex-wrap gap-2 justify-center  items-center my-6 '>
             {CATEGORY && CATEGORY.map(({type,id} ) => (
               <li 
-              className={ id === activeId  ?  "p-3 border rounded-xl flex justify-center flex-1 bg-[#029e9d]" :" p-3 border rounded-xl flex justify-center flex-1" } 
+              className={ id === activeId  ?  "p-3 border rounded-xl flex justify-center w-[50%]  md:flex-1 bg-[#029e9d]" :" p-3 border rounded-xl flex justify-center w-[50%] md:flex-1" } 
               key={id}
               onClick={handleClick(id , type)}
               >

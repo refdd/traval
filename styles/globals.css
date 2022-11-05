@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
-
- 
-
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -81,7 +77,6 @@
     scroll-snap-align: start;
     transition: all 0.2s;
     animation: translateing 2s infinite;
-
   }
   @keyframes translateing {
     0% {

@@ -28,13 +28,13 @@ export default function Home() {
       <PerfectTour />
 
       <Testimonails />
-      <section className="  pt-11  md:pt-16  bg-[#e6eef5]  ">
+      <section className="  pt-8  md:pt-16  bg-[#e6eef5]  ">
         <HeaderSection
-          titel={"Our Blogs Offers"}
+          titel={"Our Travel Guide"}
           partOne={"Recent"}
           partTwo={"Articles & Posts"}
           decs={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            "Best Places to visit, Things to do, Food to Eat and all what you need to know before visiting Egypt"
           }
         />
         <MultiPackage Blogs={true} />

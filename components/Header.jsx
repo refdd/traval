@@ -16,8 +16,7 @@ function Header() {
 
           {/* content  */}
           <div className="absolute top-0 flex flex-col  justify-center items-center w-full h-full text-slate-100 "> 
-           <h2 className="text-xl text-white text-center font-serif  ">Travelen </h2>
-           <p className="text-white text-center text-3xl w-[285px] md:text-6xl md:w-[700px] md:font-bold font-serif  ">Create Yout Jouruey Joufull Through Us </p>
+           <h1 className="text-white text-center text-xl w-[285px] md:text-6xl md:w-full mt-[-75px] md:font-bold font-serif md:mt-[-277px]  ">Joyful Nile Cruise Trips </h1>
           </div>
         </div>
       </div>

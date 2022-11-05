@@ -51,9 +51,9 @@ function FandQ() {
     <div className="h-auto " >
       <HeaderSection
       titel="FaQ"
-      partOne="Frapuent Asked "
+      partOne="Frequently Asked "
       partTwo="Questions"
-      decs="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      decs="Below are some of the frequently asked questions and their answers, hopefully, you will find what questions you are looking for."
     />
       <div className="container mx-auto px-6 py-6">
         <Faq data={data}  config={config} />

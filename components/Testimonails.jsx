@@ -25,7 +25,7 @@ const handelRightArrow=()=>{
         partOne={"Good Reviews By"}
         partTwo={"Clients"}
         decs={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          "Around Egypt Tours rated 'excellent' by hundreds of travelers on TripAdvisor."
         }
       />
       <div className="flex flex-col md:flex-row justify-center items-center md:gap-4 py-10 ">
@@ -58,7 +58,7 @@ const handelRightArrow=()=>{
         </div>
         {/* image section  */}
         <div className="py-7 cursor-pointer">
-          <Link href={'https://www.youtube.com/watch?v=0gxgHRda7Do'}>
+          <Link href={'https://www.tripadvisor.com/Attraction_Review-g294201-d17463448-Reviews-Around_Egypt_Tours_Egypt_Packages-Cairo_Cairo_Governorate.html'}>
           <a target="_blank">
           <Image
           src={testimonialImage}

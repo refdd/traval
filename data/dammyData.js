@@ -7,11 +7,10 @@ import Blogs from "../models/blogs";
 import FandQ from "../models/faq";
 import Category from "../models/category-pac";
 export const CATEGORY = [
-  new Category(1, "Cycling"),
-  new Category(2, "Family"),
-  new Category(3, "Sailing"),
-  new Category(4, "Hiking"),
-  new Category(5, "Wildlife"),
+  new Category(1, "Luxor Aswan Nile Cruises"),
+  new Category(2, "Lake Nasser Nile Cruises"),
+  new Category(3, "Dahabiya Nile Cruises"),
+  new Category(4, "Christmas Nile Cruises"),
 ];
 
 const FaQ = {
