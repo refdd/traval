@@ -10,7 +10,10 @@ const initialState = {
 };
 
 export const ContextProvider = ({ children }) => {
-  const [displayType , setDisplayType] = useState("Cycling")
+  const [displayType , setDisplayType] = useState({
+    Nile: "Luxor Aswan Nile Cruises",
+    Travel: "Classical Egypt Travel Packages"
+  })
 
   
 

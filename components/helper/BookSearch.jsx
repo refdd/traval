@@ -5,8 +5,8 @@ import Select from 'react-select'
 function BookSearch() {
     const {register , handleSubmit , control} = useForm();
     const [data , setData] = useState("") ;
+    console.log(data)
     const options1 = [
-      { value: 'Tour Type', label: 'Tour Type' },
       { value: 'Cruise', label: 'Nile Cruise' },
       { value: 'Travel ', label: 'Travel Package' },
      
@@ -33,7 +33,8 @@ function BookSearch() {
         name="type"  
         render={({ onChange, value, name, ref }) => (
           <Select
-               defaultValue={options1[0]}
+          placeholder={<div>Tour type</div>}
+               defaultValue={options1[0].value}
               inputRef={ref}
               classNamePrefix="addl-class"
               options={options1}

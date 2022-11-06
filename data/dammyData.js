@@ -4,8 +4,11 @@ import imageAfater from "../public/assets/images/img1.jpg";
 import BlogsImage from "../public/assets/images/trending12.jpg";
 import slagImage from "../public/assets/images/1.jpg";
 import Blogs from "../models/blogs";
-import FandQ from "../models/faq";
 import Category from "../models/category-pac";
+import ToursTyps from "../models/toures"
+
+
+
 export const CATEGORY = [
   new Category(1, "Luxor Aswan Nile Cruises"),
   new Category(2, "Lake Nasser Nile Cruises"),
@@ -127,80 +130,7 @@ export const testimonialsData = [
 export const PackageS = [
   new Package(
     "p1",
-    "Cycling",
-    defaultImage,
-    "5 days",
-    "Egypt",
-    "Piazza Castello",
-    5,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-    " 77.00",
-    0.2
-  ),
-  new Package(
-    "p1",
-    "Cycling",
-    defaultImage,
-    "5 days",
-    "Egypt",
-    "Santorini, Oia",
-    5,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-    " 66.00",
-    0
-  ),
-  new Package(
-    "p1",
-    "Cycling",
-    defaultImage,
-    "7 days",
-    "Egypt",
-    "Piazza Castello",
-    5,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-    " 77.00",
-    0
-  ),
-  new Package(
-    "p1",
-    "Cycling",
-    defaultImage,
-    "7 days",
-    "Egypt",
-    "Hurawalhi Island",
-    5,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-    " 500.00",
-    0
-  ),
-  new Package(
-    "p1",
-    "Cycling",
-    defaultImage,
-    "5 days",
-    "Egypt",
-    "Santorini, Oia",
-    5,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-    " 88.00",
-    0
-  ),
-  new Package(
-    "p1",
-    "Cycling",
-    defaultImage,
-    "7 days",
-    "Egypt",
-    "Hurawalhi Island",
-    5,
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-    " 200.00",
-    0
-  ),
-
-  new Package(
-    "p1",
-    "Family",
+    "Christmas Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -212,7 +142,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Family",
+    "Christmas Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -224,7 +154,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Family",
+    "Christmas Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -236,7 +166,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Family",
+    "Christmas Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -248,7 +178,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Family",
+    "Christmas Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -260,7 +190,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Family",
+    "Christmas Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -273,7 +203,7 @@ export const PackageS = [
 
   new Package(
     "p1",
-    "Sailing",
+    "Dahabiya Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -285,7 +215,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Sailing",
+    "Dahabiya Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -297,7 +227,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Sailing",
+    "Dahabiya Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -309,7 +239,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Sailing",
+    "Dahabiya Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -321,7 +251,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Sailing",
+    "Dahabiya Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -333,7 +263,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Sailing",
+    "Dahabiya Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -346,7 +276,7 @@ export const PackageS = [
 
   new Package(
     "p1",
-    "Hiking",
+    "Lake Nasser Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -358,7 +288,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Hiking",
+    "Lake Nasser Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -370,7 +300,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Hiking",
+    "Lake Nasser Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -382,7 +312,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Hiking",
+    "Lake Nasser Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -394,7 +324,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Hiking",
+    "Lake Nasser Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -406,7 +336,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Hiking",
+    "Lake Nasser Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -419,7 +349,7 @@ export const PackageS = [
 
   new Package(
     "p1",
-    "Wildlife",
+    "Luxor Aswan Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -431,7 +361,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Wildlife",
+    "Luxor Aswan Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -443,7 +373,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Wildlife",
+    "Luxor Aswan Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -455,7 +385,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Wildlife",
+    "Luxor Aswan Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -467,7 +397,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Wildlife",
+    "Luxor Aswan Nile Cruises",
     defaultImage,
     "5 days",
     "Egypt",
@@ -479,7 +409,7 @@ export const PackageS = [
   ),
   new Package(
     "p1",
-    "Wildlife",
+    "Luxor Aswan Nile Cruises",
     defaultImage,
     "7 days",
     "Egypt",
@@ -489,4 +419,304 @@ export const PackageS = [
     " 200.00",
     0.5
   ),
+];
+export const PackageToTravelpackaes = [
+  new Package(
+    "p1",
+    "Honeymoon Travel Packages",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "refat tour to hell",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Honeymoon Travel Packages",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "refat tour to hell",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 66.00",
+    0.3
+  ),
+  new Package(
+    "p1",
+    "Honeymoon Travel Packages",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "refat tour to hell",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Honeymoon Travel Packages",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "refat tour to hell",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 500.00",
+    0.2
+  ),
+  new Package(
+    "p1",
+    "Honeymoon Travel Packages",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "refat tour to hell",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 88.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Honeymoon Travel Packages",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "refat tour to hell",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 200.00",
+    0
+  ),
+
+  new Package(
+    "p1",
+    "Egypt Easter Vacations",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Piazza Castello",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Egypt Easter Vacations",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Santorini, Oia",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 66.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Egypt Easter Vacations",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Piazza Castello",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Egypt Easter Vacations",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Hurawalhi Island",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 500.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Egypt Easter Vacations",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Santorini, Oia",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 88.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Egypt Easter Vacations",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Hurawalhi Island",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 200.00",
+    0
+  ),
+
+  new Package(
+    "p1",
+    "Christmas and New Year tours",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Piazza Castello",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Christmas and New Year tours",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Santorini, Oia",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 66.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Christmas and New Year tours",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Piazza Castello",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Christmas and New Year tours",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Hurawalhi Island",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 500.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Christmas and New Year tours",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Santorini, Oia",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 88.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Christmas and New Year tours",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Hurawalhi Island",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 200.00",
+    0.6
+  ),
+
+  new Package(
+    "p1",
+    "Classical Egypt Travel Packages",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Piazza Castello",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Classical Egypt Travel Packages",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Santorini, Oia",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 66.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Classical Egypt Travel Packages",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Piazza Castello",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 77.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Classical Egypt Travel Packages",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Hurawalhi Island",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 500.00",
+    0
+  ),
+  new Package(
+    "p1",
+    "Classical Egypt Travel Packages",
+    defaultImage,
+    "5 days",
+    "Egypt",
+    "Santorini, Oia",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 88.00",
+    0.4
+  ),
+  new Package(
+    "p1",
+    "Classical Egypt Travel Packages",
+    defaultImage,
+    "7 days",
+    "Egypt",
+    "Hurawalhi Island",
+    5,
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+    " 200.00",
+    0.5
+  ),
+];
+export const ToursOfTyps = [
+  new ToursTyps("1","cruises", "Bucket List" ,"Egypt River" , "Nile Cruises" , "The best Nile Cruise trip with the best prices. Choose your cruise route from Luxor to Aswan or Cruise Lake Nasser.",["Luxor Aswan Nile Cruises", "Lake Nasser Nile Cruises","Dahabiya Nile Cruises" , "Christmas Nile Cruises",  ],PackageS ),
+  new ToursTyps("1","travel","Bucket List" ,"Egypt Travel" , "Packages  " ,
+   "Start your Trip by the ancient Giza Pyramids, Egyptian Museum and old Cairo then mix it with Nile Cruise from Luxor to Aswan, end your trip with Red Sea Relaxation  ",
+   ["Classical Egypt Travel Packages", "Christmas and New Year tours","Egypt Easter Vacations" , "Honeymoon Travel Packages",  ],PackageToTravelpackaes ),
+  
 ];

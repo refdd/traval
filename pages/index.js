@@ -9,19 +9,30 @@ import MultiPackage from "../components/MultiPackage";
 import NavBar from "../components/NavBar";
 import PerfectTour from "../components/PerfectTour";
 import SelectPackagess from "../components/SelectPackagess";
+import PackageTyps from "../components/PackageTyps";
 import Testimonails from "../components/Testimonails";
-import bg from "../public/assets/images/bg4.jpg";
-
+import { ToursOfTyps } from "../data/dammyData";
 export default function Home() {
   return (
     <div>
       <NavBar />
       <Header />
       <BookingSearch />
-      <section className=" md:pt-16  bg-[#e6eef5]  ">
-        <SelectPackagess />
-        <MultiPackage package={true} />
-      </section>
+      {ToursOfTyps &&
+        ToursOfTyps.map((item, id) => (
+          <section key={id} className=" md:pt-16  bg-[#e6eef5]  ">
+            <SelectPackagess
+             sypTypes={item.supType} 
+            titel={item.titleHeader} 
+            partOne={item.partOne}
+            partTwo={item.partTwo}
+            decs={item.descHeader}
+            />
+            <PackageTyps type={item.type} packages={item.listTours} />
+          </section>
+        ))}
+
+ 
       <section className="  pt-11  md:pt-16  bg-[#e6eef5]  ">
         <MultiPackage offerSection={true} />
       </section>
@@ -42,8 +53,8 @@ export default function Home() {
 
       <Explore />
       <FandQ />
-      
-      <Footer/>         
+
+      <Footer />
     </div>
   );
 }
