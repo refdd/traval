@@ -19,16 +19,19 @@ const options1 = [
 function PackageList() {
   const [tourList, setTourList] = useState(null);
   const [typeList, setTypeList] = useState(null);
-  if (!ToursOfTyps) return <div>loding</div>
   const router = useRouter();
-  const TypeTour = router.query.types;
+  const {types} = router.query;
+
   useEffect(() => {
-    let alltour = ToursOfTyps.find((tour) => tour.type === TypeTour);
+    let alltour = ToursOfTyps.find((tour) => tour.type === types);
     const { listTours ,type } = alltour;
     setTourList(listTours);
     setTypeList(type)
     
-  }, [TypeTour]);
+  }, [types]);
+  
+  if (!types) return null
+
   return (
     <div className="">
       <NavBar />
