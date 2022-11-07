@@ -14,7 +14,6 @@ function SelectPackagess({sypTypes ,titel,partOne , partTwo , decs }) {
          setDisplayType(type)
        
       }
-     console.log(sypTypes)
   return (
     <div className=' w-full bg-[#e6eef5] '>
         {/* header seaction */}

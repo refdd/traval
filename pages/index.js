@@ -3,7 +3,7 @@ import BookingSearch from "../components/BookingSearch";
 import Explore from "../components/Explore";
 import FandQ from "../components/FandQ";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../components/headers/Header";
 import HeaderSection from "../components/helper/HeaderSection";
 import MultiPackage from "../components/MultiPackage";
 import NavBar from "../components/NavBar";
