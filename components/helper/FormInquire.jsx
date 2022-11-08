@@ -72,7 +72,7 @@ function FormInquire() {
   return (
     <form   className="relative" onSubmit={handleSubmit((data) => setData({...data , aduies:aduitsNumber, cikdren:childrenNumber }))}>
    <div ref={divfixrd}>
-   <div  className={showform ?  ` md:fixed top-0` : "absolute top-0"}>
+   <div  className={showform ?  ` md:fixed top-0` : " md:absolute md:top-0"}>
       <div className="w-full relative">
         <div className="mx-auto w-[90%] flex flex-col gap-3  rounded-xl overflow-hidden pb-4 border  ">
           {/* header */}
