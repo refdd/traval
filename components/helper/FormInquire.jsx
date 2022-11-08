@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import DatePicker from "react-datepicker";
 const options = [
   { value: "Egypt", label: "Egypt" },
   { value: "cairo ", label: "cairo" },
