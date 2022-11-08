@@ -41,7 +41,7 @@ function MultiPackage({ offerSection , Blogs }) {
       <div className="group  relative md:ml-2 ">
         <BsFillArrowLeftCircleFill
           className={`absolute top-0 bottom-0 left-2 z-40 m-auto h-9 w-9 
-           cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 ${
+           cursor-pointer  transition hover:scale-125  ${
              !isMoved && " hidden"
            }`}
           onClick={() => handleClick("left")}
@@ -54,7 +54,7 @@ function MultiPackage({ offerSection , Blogs }) {
         </div>
         <BsFillArrowRightCircleFill
           className=" absolute top-0 bottom-0   right-2 z-40 m-auto h-9 w-9
-            cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100"
+            cursor-pointer  transition hover:scale-125 "
           onClick={() => handleClick("right")}
         />
       </div>

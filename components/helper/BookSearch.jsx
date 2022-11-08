@@ -6,11 +6,12 @@ function BookSearch() {
     const {register , handleSubmit , control} = useForm();
     const [data , setData] = useState("") ;
     console.log(data)
-    const options1 = [
+    const options = [
       { value: 'Cruise', label: 'Nile Cruise' },
       { value: 'Travel ', label: 'Travel Package' },
      
     ]
+    console.log(data)
   return (
     <form onSubmit={handleSubmit((data)  => setData( JSON.stringify(data)) ) }
      className="flex flex-col gap-4 w-full h-full md:gap-6  ">
@@ -29,19 +30,16 @@ function BookSearch() {
 
         <Controller
         control={control}
-        defaultValue={options1[0].value}
+        defaultValue={options[0].value}
         name="type"  
-        render={({ onChange, value, name, ref }) => (
+        render={({ field: { onChange, value, ref }}) => (
           <Select
           placeholder={<div>Tour type</div>}
-               defaultValue={options1[0].value}
-              inputRef={ref}
-              classNamePrefix="addl-class"
-              options={options1}
-              value={options1.find(c => c.value === value)}
-              onChange={onChange}
-            instanceId={"type"}
-
+          inputRef={ref}
+          classNamePrefix="addl-class"
+          options={options}
+          value={options.find(c => c.value === value)}
+          onChange={val => onChange(val.value)}
           />
       )}
         />

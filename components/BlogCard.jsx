@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { lazy, useEffect, useState } from "react";
 import { BsCalendar3, BsStarFill } from "react-icons/bs";
-import { useStateContext } from "../contexts/ContextProvider";
 import { blogsData } from "../data/dammyData";
 function BlogCard() {
   const [blags,setBlogs ] = useState(null)

@@ -16,6 +16,7 @@ function NavBar() {
         <div className="">
           <div className=" flex h-full w-full   ">
             {/* logo  */}
+            <Link href="/">
             <div className=" w-11/12 flex justify-between items-center md:w-1/5 cursor-pointer  ">
               <div className="">
                 <Image
@@ -27,6 +28,8 @@ function NavBar() {
               </div>
             </div>
           
+            </Link>
+           
             {/* links  */}
             <div className=" w-3/5 flex   justify-center items-center">
               <ul className=" hidden md:flex gap-6 font-serif   ">
@@ -36,12 +39,12 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className="text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                  <Link href="/">
+                <Link href={`/packageList/travel`}>
                     <a>Traval Packages </a>
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                  <Link href="/">
+                <Link href={`/packageList/cruises`}>
                     <a>Egypt Cruises </a>
                   </Link>
                 </li>

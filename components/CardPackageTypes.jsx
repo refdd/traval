@@ -48,9 +48,7 @@ function CardPackageTypes({packages}) {
           </div>
           {/* content  */}
           <div className="flex flex-col gap-3 border-b mx-4 mt-5">
-            <h4 className="font-serif text-[#029e9d] text-xl font-medium text-left">
-              {item?.cpuntry}
-            </h4>
+           
             <h2 className="font-serif  text-[#212529] text-2xl font-bold">
             {item.title}
             </h2>
