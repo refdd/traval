@@ -14,13 +14,15 @@ export const ContextProvider = ({ children }) => {
     Nile: "Luxor Aswan Nile Cruises",
     Travel: "Classical Egypt Travel Packages"
   })
+  const [desplaygrid , setdesplauGrid] = useState(false)
+  
 
   
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <StateContext.Provider value={{ initialState , displayType , setDisplayType }}>
-      {children}
+    <StateContext.Provider value={{ initialState , displayType , setDisplayType , desplaygrid , setdesplauGrid }}>
+      {children} 
     </StateContext.Provider>
   );
 };

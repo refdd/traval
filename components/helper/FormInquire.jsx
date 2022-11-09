@@ -70,7 +70,7 @@ function FormInquire() {
   const [data, setData] = useState("");
 
   return (
-    <form   className="relative" onSubmit={handleSubmit((data) => setData({...data , aduies:aduitsNumber, cikdren:childrenNumber }))}>
+    <form  id="InquireFrom"  className="relative" onSubmit={handleSubmit((data) => setData({...data , aduies:aduitsNumber, cikdren:childrenNumber }))}>
    <div ref={divfixrd}>
    <div  className={showform ?  ` md:fixed top-0` : " md:absolute md:top-0"}>
       <div className="w-full relative">

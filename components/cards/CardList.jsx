@@ -4,14 +4,35 @@ import React, { useEffect, useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { AiFillStar } from "react-icons/ai";
 import Link from "next/link";
-function CardList({packages}) {
+import {useStateContext} from "../../contexts/ContextProvider"
+
+function CardList({packages , valueState}) {
+  const [gackageBeforeSort, setPackageBeforeSort ] = useState(null)
+const {desplaygrid , setdesplauGrid} = useStateContext()
+useEffect(()=>{
+  if(!valueState){
+    setPackageBeforeSort(packages)
+   }
+},[packages])
+useEffect(()=>{
+if(valueState == "price"){
+
+  let pacdageSortBy = packages.sort((a , b) => a.price - b.price )
+  setPackageBeforeSort(pacdageSortBy)
+}
+
+} , [  valueState  ])
   return (
     <>
     {
-      packages && packages.map((item) =>(
-        <div key={item.id} className="flex flex-col md:flex-row gap-2 justify-center items-center w-[70%] mx-auto md:w-[90%] md:mx-4 bg-slate-100 p-5 rounded-xl mt-5 ">
+      gackageBeforeSort && gackageBeforeSort.map((item) =>(
+        <div key={item.id} className={desplaygrid ? "flex flex-col gap-2 w-[90%]  md:w-[45%]   bg-slate-100 p-5 rounded-xl mt-5 "
+          :"flex flex-col md:flex-row gap-2 justify-center md:justify-start items-center w-[70%] mx-auto md:w-[90%] md:mx-4 bg-slate-100 p-5 rounded-xl mt-5 "
+      }>
     {/* image */}
-    <div className="relative rounded-xl overflow-hidden md:w-[30%] md:h-48  ">
+    <div className={desplaygrid ?"relative rounded-xl overflow-hidden w-full ":
+      "relative rounded-xl overflow-hidden md:w-[30%] md:h-48  "
+  }>
       <Image
        src={item.imageUrl}
        alt="Picture of the author"
@@ -26,9 +47,13 @@ function CardList({packages}) {
       <div className="absolute top-0 left-0 w-full h-full bg-[#00000057]"></div>
     </div>
     {/* content */}
-    <div className="flex flex-col md:flex-row gap-2 justify-center items-center ">
+    <div className={desplaygrid ?" flex flex-col gap-2 justify-center   items-center  " :
+      " flex flex-col md:flex-row gap-2 justify-center md:justify-start  items-center md:flex-1 "
+  }>
       {/* right side */}
-     <div className="flex flex-col gap-2 justify-center items-center md:justify-start md:items-start ">
+     <div className={desplaygrid ? "flex flex-col gap-2 justify-center items-center ":
+        "flex flex-col gap-2 justify-center items-center md:justify md:items-start md:flex-1 " 
+    }>
      <p className="text-sm text-center md:text-left text-[#777] font-serif "> 6+ Days | Full Days tours</p>
       <h2 className="text-center md:text-left text-2xl capitalize font-serif "> {item.title}</h2>
         <p className="flex text-center md:text-left text-lg capitalize font-serif text-[#029e9d]"> <CiLocationOn size={24} color="#029e9d"/> {item.cpuntry}</p>
@@ -36,7 +61,9 @@ function CardList({packages}) {
         <p className="text-[#029e9d] text-center md:text-left text-lg font-serif ">free cancellation</p>
      </div>
      {/* left side */}
-    <div className="flex flex-col gap-2 justify-center items-center  md:justify-end md:items-end">
+    <div className={desplaygrid ? "flex flex-col gap-2 justify-center items-center ":
+        "flex flex-col gap-2 justify-center items-center  md:justify-end md:items-end"
+  }>
     <div className="flex gap-2 w-full justify-center items-center md:justify-end ">
         <AiFillStar size={24} color="#ffc107"/>
         <AiFillStar size={24} color="#ffc107"/>
