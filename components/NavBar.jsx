@@ -39,17 +39,22 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className="text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                <Link href={`/packageList/travel`}>
+                <Link href={`/Destination/travel`}>
                     <a>Traval Packages </a>
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                <Link href={`/packageList/cruises`}>
+                <Link href={`/Destination/cruises`}>
                     <a>Egypt Cruises </a>
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                  <Link href="/">
+                  <Link href="/Destination">
+                    <a>Destination </a>
+                  </Link>
+                </li>
+                <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
+                  <Link href="/AboutUs">
                     <a>About </a>
                   </Link>
                 </li>

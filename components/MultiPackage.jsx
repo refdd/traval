@@ -59,12 +59,21 @@ function MultiPackage({ offerSection , Blogs }) {
         />
       </div>
       <div className="  group w-full pt-10  md:pt-16 flex justify-center items-center  ">
-        <Link href={`/`}>
+        {!offerSection ? 
+      <Link href={`/BlogList`}>
+      <button className=" wrapper w-full md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden  ">
+               <span className="absolute w-0 top-0 left-0 b-b-width bg-[#ffc107] -z-10 h-full"></span>
+                read more
+                </button>
+      </Link>
+      :
+      <Link href={`/BlogList`}>
         <button className=" wrapper w-full md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden  ">
                  <span className="absolute w-0 top-0 left-0 b-b-width bg-[#ffc107] -z-10 h-full"></span>
                   read more
                   </button>
-        </Link>
+        </Link>  
+      }
               
             </div>
     </div>
