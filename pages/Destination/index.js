@@ -23,7 +23,7 @@ function Destination() {
       <div className=" grid grid-cols-1 md:grid-cols-6 gap-3  ">
         {/* left content side */}
         <div className="flex flex-col gap-3 col-start-1 col-end-6   w-full md:col-span-4">
-          <HeaderDestination />
+          <HeaderDestination titel={"Egpyt tours"} location="Greater London, United Kingdom" reviews={"(1,186 Reviews)"} />
           <div className="container mx-auto md:w-full ">
             <Image
               src={imageDestination}
@@ -121,11 +121,11 @@ function Destination() {
         ToursOfTyps.map((item, id) => (
           <section key={id} className=" md:pt-16  bg-[#e6eef5]  ">
             <SelectPackagess
-             sypTypes={item.supType} 
-            titel={item.titleHeader} 
-            partOne={item.partOne}
-            partTwo={item.partTwo}
-            decs={item.descHeader}
+              sypTypes={item.supType}
+              titel={item.titleHeader}
+              partOne={item.partOne}
+              partTwo={item.partTwo}
+              decs={item.descHeader}
             />
             <PackageTyps type={item.type} packages={item.listTours} />
           </section>

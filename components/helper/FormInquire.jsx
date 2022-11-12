@@ -47,7 +47,6 @@ function FormInquire() {
     const handlebottomfiexd = () => {
       if (!divfixrd.current) return;
       const { top, bottom } = divfixrd.current.getBoundingClientRect();
-      console.log(bottom)
       if(pathname == "/Destination"){
         setStopScroll(-612)
        
@@ -261,7 +260,7 @@ function FormInquire() {
                   id="message"
                   {...register("desc", { required: true })}
                   rows="4"
-                  class=" p-2.5 w-[90%] text-sm text-[#777] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+                  className=" p-2.5 w-[90%] text-sm text-[#777] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
                   placeholder="Your message..."
                 ></textarea>
               </div>

@@ -62,7 +62,7 @@ function Explore() {
                 </span>
                 <div className=" absolute top-[35%] right-5 p-3 w-full   ">
                   <iframe
-                    class=" w-full h-[299px]   ml-5 md:h-[350px]  md:m-auto md:w-[89%] "
+                    className=" w-full h-[299px]   ml-5 md:h-[350px]  md:m-auto md:w-[89%] "
                     src=""
                   ></iframe>
                 </div>

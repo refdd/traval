@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsCalendar3, BsStarFill } from "react-icons/bs";
 import { useStateContext } from "../contexts/ContextProvider";
@@ -48,10 +49,12 @@ function CardPackageTypes({packages}) {
           </div>
           {/* content  */}
           <div className="flex flex-col gap-3 border-b mx-4 mt-5">
+           <Link href={`/tour/${item.id}`}>
            
             <h2 className="font-serif  text-[#212529] text-2xl font-bold">
             {item.title}
             </h2>
+            </Link>
             <div className="flex space-x-2 items-center  ">
               <BsStarFill color="#ffc107" />
               <BsStarFill color="#ffc107" />
