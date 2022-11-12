@@ -13,6 +13,9 @@ import Prices from "../../components/tapsComponents/Prices";
 import Reviews from "../../components/tapsComponents/Reviews";
 import AddRevews from "../../components/tapsComponents/AddRevews.jsx";
 import { useStateContext } from "../../contexts/ContextProvider";
+import Explore from "../../components/Explore";
+import FandQ from "../../components/FandQ";
+import Footer from "../../components/Footer";
 
 function SingelTour() {
   const {isClicked} =useStateContext()
@@ -41,12 +44,19 @@ function SingelTour() {
        {/* {isClicked.Reviews && <Reviews/> } */}
           
           </div>
+          <Reviews/> 
+          <Comments/>
+          <AddRevews/> 
+        
         </div>
         {/* right form iqurire */}
         <div className="  w-full col-start-1 col-end-6  md:col-start-5 md:col-end-7   ">
           <FormInquire />
         </div>
       </div>
+      <Explore />
+      <FandQ />
+      <Footer />
     </div>
   );
 }

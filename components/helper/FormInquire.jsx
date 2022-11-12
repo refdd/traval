@@ -47,6 +47,11 @@ function FormInquire() {
     const handlebottomfiexd = () => {
       if (!divfixrd.current) return;
       const { top, bottom } = divfixrd.current.getBoundingClientRect();
+
+      if(pathname.includes("/tour/")){
+        setStopScroll(-2912)
+      
+      }
       if(pathname == "/Destination"){
         setStopScroll(-612)
        

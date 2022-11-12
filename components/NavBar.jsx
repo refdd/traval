@@ -32,7 +32,7 @@ function NavBar() {
            
             {/* links  */}
             <div className=" w-3/5 flex   justify-center items-center">
-              <ul className=" hidden md:flex gap-6 font-serif   ">
+              <ul className=" hidden md:flex gap-4 font-serif   ">
                 <li className="text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
                   <Link href="/">
                     <a>Home </a>
@@ -56,6 +56,11 @@ function NavBar() {
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
                   <Link href="/AboutUs">
                     <a>About </a>
+                  </Link>
+                </li>
+                <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
+                  <Link href="/CountactUs">
+                    <a>Countact Us</a>
                   </Link>
                 </li>
               </ul>

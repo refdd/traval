@@ -5,13 +5,21 @@ const StateContext = createContext();
 const initialState = {
   Highlight: false,
   Iternary: false,
-  Reviews: false,
-  Comments: false,
-  AddReviwes: false,
+  // Reviews: false,
+  // Comments: false,
+  // AddReviwes: false,
   Prices: false,
+};
+const initialActiveLike = {
+  like:false,
+  dislike:false,
 };
 
 export const ContextProvider = ({ children }) => {
+  const [activLike , setActiveLike ] = useState(initialActiveLike)
+  const handleClickAvtiveLike = (clicked) =>
+  setActiveLike({ ...initialActiveLike, [clicked]: true });
+
   const [displayType, setDisplayType] = useState({
     Nile: "Luxor Aswan Nile Cruises",
     Travel: "Classical Egypt Travel Packages",
@@ -34,6 +42,8 @@ export const ContextProvider = ({ children }) => {
         setDisplayType,
         desplaygrid,
         setdesplauGrid,
+        handleClickAvtiveLike,
+        activLike
       }}
     >
       {children}
