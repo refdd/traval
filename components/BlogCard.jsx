@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { lazy, useEffect, useState } from "react";
 import { BsCalendar3, BsStarFill } from "react-icons/bs";
 import { blogsData } from "../data/dammyData";
@@ -31,12 +32,13 @@ function BlogCard() {
           </div>
           {/* content  */}
           <div className="flex flex-col gap-3 border-b mx-4 mt-5">
-            <h4 className="font-serif text-[#029e9d] text-xl font-medium text-left">
-              {item?.cpuntry}
-            </h4>
+            
+            <Link href={`/blog/${item.id}`}>
+            
             <h2 className="font-serif  text-[#212529] text-2xl font-bold">
             {item.title}
             </h2>
+            </Link>
 
             <p className="text-[#777] text-left leading-6 mb-3 ">
             {item.desc}

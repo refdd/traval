@@ -68,9 +68,9 @@ function NavBar() {
             {/* button booking  */}
             <div className=" hidden md:flex md:w-1/5  justify-center items-center">
               <div className=" flex">
-                <Link href="/">
+                <Link href="/InquireNow">
                   <a className="bg-[#029e9d]  text-center text-white text-lg rounded-2xl md:p-4 md:text-xl transition hover:bg-[#fdc703]">
-                    booking Now
+                  Inquire now
                   </a>
                 </Link>
               </div>

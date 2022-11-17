@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import Select from "react-select";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { useRouter } from 'next/router'
+
 const options = [
   { value: "Egypt", label: "Egypt" },
   { value: "cairo ", label: "cairo" },
@@ -78,13 +80,18 @@ function FormInquire() {
   const [startDate, setStartDate] = useState(new Date());
 
   const [data, setData] = useState("");
-
+  const router = useRouter()
+ if(data){
+  console.log(data)
+  router.push('/Test')
+ }
   return (
     <form
       id="InquireFrom"
       className="relative"
       onSubmit={handleSubmit((data) =>
         setData({ ...data, aduies: aduitsNumber, cikdren: childrenNumber })
+        
       )}
     >
       <div ref={divfixrd}>
@@ -93,10 +100,10 @@ function FormInquire() {
             <div className="mx-auto w-[90%] flex flex-col gap-3  rounded-xl overflow-hidden pb-4 border  ">
               {/* header */}
               <div className="w-full bg-[#029e9d] flex justify-center items-center py-5">
-                <button className="text-2xl capitalize font-serif text-white ">
+                <div className="text-2xl capitalize font-serif text-white ">
                   {" "}
                   inquire Now
-                </button>
+                </div>
               </div>
               {/* input mail and name  */}
               <div className="w-[90%] mx-auto justify-center items-center flex flex-col md:flex-row gap-3 ">
@@ -111,7 +118,8 @@ function FormInquire() {
                   id="exampleEmail0"
                   placeholder="Email * "
                 />
-                {errors.Email && <span>This field is required</span>}
+     {errors.Email && <span className="text-lg font-medium text-red-700">This field is required</span>}
+
                 <input
                   type="text"
                   className=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
@@ -121,7 +129,8 @@ function FormInquire() {
                   placeholder="Name *"
                   {...register("Name", { required: true })}
                 />
-                {errors.Name && <span>This field is required</span>}
+                    {errors.Name && <span className="text-lg font-medium text-red-700">This field is required</span>}
+
               </div>
               {/* input date */}
               <div className="w-full felx justify-center items-center gap-3">
@@ -134,14 +143,11 @@ function FormInquire() {
                       onFocus={(e) => (e.target.type = "date")}
                       onBlur={(e) => (e.target.type = "text")}
                       {...register("startdate", {
-                        required: "Data is required",
+                        required: true,
                       })}
                     />
-                    {errors.startdate && (
-                      <span className="text-sm text-red-700 ">
-                        {errors.startdate.massage}
-                      </span>
-                    )}
+                                       {errors.startdate && <span className="  md:text-lg font-medium text-red-700">This field is required</span>}
+
                   </div>
                   <div className=" w-[50%]  flex flex-col gap-1 ">
                     <input
@@ -150,13 +156,10 @@ function FormInquire() {
                       placeholder="Arrival"
                       onFocus={(e) => (e.target.type = "date")}
                       onBlur={(e) => (e.target.type = "text")}
-                      {...register("endDate", { required: "Data is required" })}
+                      {...register("endDate", { required: true })}
                     />
-                    {errors.startdate && (
-                      <span className="text-sm text-red-700 ">
-                        {errors.endDate.massage}
-                      </span>
-                    )}
+                           {errors.endDate && <span className="  md:text-lg font-medium text-red-700">This field is required</span>}
+
                   </div>
                 </div>
               </div>
@@ -164,7 +167,7 @@ function FormInquire() {
               <div className="w-[90%] mx-auto">
                 <Controller
                   control={control}
-                  defaultValue={options[0].value}
+                  rules={{ required: true }}
                   name="Nationailty"
                   render={({ field: { onChange, value, ref } }) => (
                     <Select
@@ -178,6 +181,8 @@ function FormInquire() {
                     />
                   )}
                 />
+                           {errors.Nationailty && <span className="  md:text-lg font-medium text-red-700">This field is required</span>}
+ 
               </div>
               {/* code and whats app  */}
               <div className="flex w-full justify-center items-center  ">
@@ -185,9 +190,9 @@ function FormInquire() {
                   <div className="w-[50%]">
                     <Controller
                       control={control}
-                      defaultValue={options[0].value}
+                      rules={{ required: true }}
                       name="code"
-                      render={({ field: { onChange, value, ref } }) => (
+                      render={({ field: { onChange, value, ref, } }) => (
                         <Select
                           placeholder={<div>code*</div>}
                           defaultValue={options[0].value}
@@ -199,6 +204,8 @@ function FormInquire() {
                         />
                       )}
                     />
+                           {errors.code && <span className="  md:text-lg font-medium text-red-700">This field is required</span>}
+
                   </div>
                   <div className="w-[40%]">
                     <input
@@ -212,7 +219,8 @@ function FormInquire() {
                       placeholder="whate app number * "
                       {...register("whatsapp", { required: true })}
                     />
-                    {errors.whatsapp && <span>This field is required</span>}
+                       {errors.whatsapp && <span className=" text-sm  md:text-lg font-medium text-red-700">This field is required</span>}
+
                   </div>
                 </div>
               </div>
