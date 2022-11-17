@@ -12,8 +12,7 @@ import SelectPackagess from "../components/SelectPackagess";
 import PackageTyps from "../components/PackageTyps";
 import Testimonails from "../components/Testimonails";
 import { ToursOfTyps } from "../data/dammyData";
-import { baseUrl, fetchApi } from "../utils/ferchApi";
-export default function Home({propertyForSale,propertyForRent}) {
+export default function Home() {
   return (
     <div>
       <NavBar />
@@ -59,13 +58,4 @@ export default function Home({propertyForSale,propertyForRent}) {
     </div>
   );
 }
-export  async  function getServerSideProps(){
-  const propertyForSale = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6`);
-  const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`);
-  return{
-    props:{
-      propertyForSale:propertyForSale,
-      propertyForRent:propertyForRent
-    }
-  }
- }
+
