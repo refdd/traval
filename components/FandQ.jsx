@@ -50,7 +50,7 @@ function FandQ() {
   return (
     <div className="h-auto " >
       <HeaderSection
-      titel="FaQ"
+      titel="FAQ"
       partOne="Frequently Asked "
       partTwo="Questions"
       decs="Below are some of the frequently asked questions and their answers, hopefully, you will find what questions you are looking for."

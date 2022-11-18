@@ -27,7 +27,7 @@ if(valueState == "price"){
     {
       gackageBeforeSort && gackageBeforeSort.map((item) =>(
         <div key={item.id} className={desplaygrid ? "flex flex-col gap-2 w-[90%]  md:w-[45%]   bg-slate-100 p-5 rounded-xl mt-5 "
-          :"flex flex-col md:flex-row gap-2 justify-center md:justify-start items-center w-[70%] mx-auto md:w-[90%] md:mx-4 bg-slate-100 p-5 rounded-xl mt-5 "
+          :"flex flex-col md:flex-row gap-2 justify-center md:justify-start items-center w-[92%] mx-auto md:w-[90%] md:mx-4 bg-slate-100 p-5 rounded-xl mt-5 "
       }>
     {/* image */}
     <div className={desplaygrid ?"relative rounded-xl overflow-hidden w-full ":
@@ -54,11 +54,10 @@ if(valueState == "price"){
      <div className={desplaygrid ? "flex flex-col gap-2 justify-center items-center ":
         "flex flex-col gap-2 justify-center items-center md:justify md:items-start md:flex-1 " 
     }>
-     <p className="text-sm text-center md:text-left text-[#777] font-serif "> 6+ Days | Full Days tours</p>
       <h2 className="text-center md:text-left text-2xl capitalize font-serif "> {item.title}</h2>
-        <p className="flex text-center md:text-left text-lg capitalize font-serif text-[#029e9d]"> <CiLocationOn size={24} color="#029e9d"/> {item.cpuntry}</p>
+     <p className="text-sm text-center md:text-left text-[#777] font-serif "> 6+ Days | Full Days tours</p>
         <h4 className="text-xl text-[#777] font-serif capitalize text-center md:text-left">{item.type}</h4>
-        <p className="text-[#029e9d] text-center md:text-left text-lg font-serif ">free cancellation</p>
+        <p className="text-[#029e9d] text-center md:text-left text-lg font-serif ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, quo!</p>
      </div>
      {/* left side */}
     <div className={desplaygrid ? "flex flex-col gap-2 justify-center items-center ":
@@ -72,8 +71,10 @@ if(valueState == "price"){
         <AiFillStar size={24} color="#ffc107"/>
         </div>
         <p className="text-right text-lg text-[#777] font-serif " >200 reviews</p>
+        <div className="flex gap-3  md:flex-col">
         <span className="text-[#777] font-serif text-lg md:text-right "> Start from</span>
         <h4 className="text-right font-mono font-bold text-xl"> ${item.price}</h4>
+        </div>
         <p className="text-right text-sm font-serif capitalize text-[#777]">Per Person</p>
         <Link href={`/`}>
         <button className=" wrapper w-full md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden  ">

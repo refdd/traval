@@ -53,24 +53,23 @@ function ContectFooter() {
               <span className=" absolute bottom-[-5px] left-0 h-1 w-[80%] bg-white"></span>
             </h1>
           </li>
+
+        
+
           <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
-            <Link href={"/"}>About Us</Link>
+            <Link href={"/AboutUs"}>About Us</Link>
           </li>
           <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
-            <Link href={"/"}>Contact Us</Link>
+            <Link href={"/CountactUs"}>Contact Us</Link>
           </li>
-         
           <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
             <Link href={"/"}>Terms & Conditions</Link>
           </li>
           <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
-            <Link href={"/"}>Nile Cruise</Link>
-          </li>
-          <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
-            <Link href={"/"}>Travel Packages</Link>
-          </li>
-          <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
             <Link href={"/"}>Payment Policy</Link>
+          </li>
+          <li className="text-xl text-white font-serif transition-all ease-in-out   hover:text-[#029e9d]">
+            <Link href={"/Destination"}>Egypt</Link>
           </li>
 
 

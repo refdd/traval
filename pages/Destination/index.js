@@ -23,7 +23,7 @@ function Destination() {
       <div className=" grid grid-cols-1 md:grid-cols-6 gap-3  ">
         {/* left content side */}
         <div className="flex flex-col gap-3 col-start-1 col-end-6   w-full md:col-span-4">
-          <HeaderDestination titel={"Egpyt tours"} location="Greater London, United Kingdom" reviews={"(1,186 Reviews)"} />
+          <HeaderDestination titel={"Egpyt tours"}  />
           <div className="container mx-auto md:w-full ">
             <Image
               src={imageDestination}
@@ -54,12 +54,12 @@ function Destination() {
           </div>
           {/* price */}
           <div className="container mx-auto  pt-12">
-            <div className=" flex flex-col gap-4 md:flex-row  ">
+            <div className=" flex flex-col gap-4  mb-4 ">
               {/* left side  */}
               <div className=" bg-[#e6eef5]  rounded-lg md:rounded-t-lg p-4 ">
                 <div className="flex flex-col pl-4">
                   <h6 className="text-2xl text-[#17233e] font-serif capitalize  my-3">
-                    Price Includes
+                     Includes
                   </h6>
                   <ul className="felx flex-col gap-5 text-[#777]">
                     <li className="flex gap-2 my-3 items-center ">
@@ -85,7 +85,7 @@ function Destination() {
               <div className=" bg-[#e6eef5] rounded-lg md:rounded-t-lg p-4 ">
                 <div className="flex flex-col pl-4">
                   <h6 className="text-2xl text-[#17233e] font-serif capitalize  my-3">
-                    Departure & Return Location
+                   Excluded
                   </h6>
                   <ul className="felx flex-col gap-5 text-[#777]">
                     <li className="flex gap-2 my-3 items-center ">

@@ -49,20 +49,11 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                  <Link href="/Destination">
-                    <a>Destination </a>
+                <Link href={`/BlogList`}>
+                    <a>Blog  </a>
                   </Link>
                 </li>
-                <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                  <Link href="/AboutUs">
-                    <a>About </a>
-                  </Link>
-                </li>
-                <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                  <Link href="/CountactUs">
-                    <a>Countact Us</a>
-                  </Link>
-                </li>
+        
               </ul>
             </div>
             {/* button booking  */}
