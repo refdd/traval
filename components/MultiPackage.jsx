@@ -34,7 +34,7 @@ function MultiPackage({ offerSection , Blogs }) {
     <div className="h-full space-y-0.5 md:space-y-2 bg-[#e6eef5]  ">
       {offerSection ? <HeaderSection 
       titel={"Top Offers"}
-        partOne={" Egypt Special"}
+        partOne={" tours Special"}
          partTwo={" Offers & Discount Packages"}
           decs={""} 
           /> : ""}

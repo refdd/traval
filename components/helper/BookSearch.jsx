@@ -7,7 +7,7 @@ function BookSearch() {
     const [data , setData] = useState("") ;
     console.log(data)
     const options = [
-      { value: 'Cruise', label: 'Nile Cruise' },
+      { value: 'Sailing', label: 'Sailing' },
       { value: 'Travel ', label: 'Travel Package' },
      
     ]
@@ -30,7 +30,6 @@ function BookSearch() {
 
         <Controller
         control={control}
-        defaultValue={options[0].value}
         name="type"  
         render={({ field: { onChange, value, ref }}) => (
           <Select

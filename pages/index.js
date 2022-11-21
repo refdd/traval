@@ -45,7 +45,7 @@ export default function Home() {
           partOne={"Recent"}
           partTwo={"Articles & Posts"}
           decs={
-            "Best Places to visit, Things to do, Food to Eat and all what you need to know before visiting Egypt"
+            "Best Places to visit, Things to do, Food to Eat and all what you need to know before visiting prise"
           }
         />
         <MultiPackage Blogs={true} />

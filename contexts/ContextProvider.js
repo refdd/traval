@@ -31,7 +31,7 @@ export const ContextProvider = ({ children }) => {
   setIsClicked({ ...initialState, [clicked]: true });
 
   const [displayType, setDisplayType] = useState({
-    Nile: "Luxor Aswan Nile Cruises",
+    Nile: "Luxor Aswan Sailling",
     Travel: "Classical Egypt Travel Packages",
   });
   const [desplaygrid, setdesplauGrid] = useState(false);

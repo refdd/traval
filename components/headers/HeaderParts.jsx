@@ -1,5 +1,5 @@
 import React from 'react'
-import  bg from "../../public/assets/images/bglistcrou.webp"
+import  bg from "../../public/assets/images/bg1.jpg"
 import  bgBottom from "../../public/assets/images/shape8.png"
 function HeaderParts({typeList}) {
   return (

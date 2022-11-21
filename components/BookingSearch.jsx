@@ -25,11 +25,9 @@ function BookingSearch() {
            <div className='w-full h-full md:h-[300px] '>
             <div className='flex flex-col gap-4 h-full w-full justify-center items-center p-4 md:items-start  '>
               <h4 className='text-xl font-bold text-[#029e9d] font-serif '>Get To Know Us </h4>
-              <h2 className=' text-2xl text-center font-serif font-bold capitalize text-[#17233e] md:text-4xl md:text-left md:leading-[3.5rem] '>Explore All that Egypt has to offer With Us.</h2>
+              <h2 className=' text-2xl text-center font-serif font-bold capitalize text-[#17233e] md:text-4xl md:text-left md:leading-[3.5rem] '>Explore All Tour Of The World With Us.</h2>
               <p className='text-center leading-6 font-serif text-[#777] md:text-left '>
-                Mix your Nile Cruise from Luxor to Aswan with a joyful trip in Cairo and
-                Red Sea Relaxation; enjoying the
-               exceptional ambiance & relishing our authentic Egyptian and international cuisine.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
             </div>
 

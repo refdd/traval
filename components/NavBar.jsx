@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import loge from "../public/assets/images/logo-new.svg"
+import loge from "../public/assets/images/logo.png"
 import {AiOutlineMenu , AiFillCloseCircle} from "react-icons/ai"
 function NavBar() {
     const [menueBar , setmenuBar]= useState(false)
@@ -44,8 +44,13 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                <Link href={`/Egypt/cruises`}>
-                    <a>Egypt Cruises </a>
+                <Link href={`/Detinations`}>
+                    <a>Sailing tours</a>
+                  </Link>
+                </li>
+                <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
+                <Link href={`/Detinations`}>
+                    <a>Detinations</a>
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
@@ -53,7 +58,6 @@ function NavBar() {
                     <a>Blog  </a>
                   </Link>
                 </li>
-        
               </ul>
             </div>
             {/* button booking  */}
@@ -86,8 +90,8 @@ function NavBar() {
                         </Link>
                     </li>
                     <li className='border-b-2 text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ' >
-                        <Link href={`/Egypt/cruises`}>
-                            <a> egypt Cruises  </a>
+                        <Link href={`/Egypt/Sailling`}>
+                            <a> egypt Sailling  </a>
                         </Link>
                     </li>
                     <li className='border-b-2  text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ' >

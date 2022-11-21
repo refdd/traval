@@ -10,10 +10,10 @@ import ToursTyps from "../models/toures"
 
 
 export const CATEGORY = [
-  new Category(1, "Luxor Aswan Nile Cruises"),
-  new Category(2, "Lake Nasser Nile Cruises"),
-  new Category(3, "Dahabiya Nile Cruises"),
-  new Category(4, "Christmas Nile Cruises"),
+  new Category(1, "Life on board."),
+  new Category(2, "Active sailing trips"),
+  new Category(3, "Wildlife watching"),
+  new Category(4, "conservation trips"),
 ];
 
 const FaQ = {
@@ -130,7 +130,7 @@ export const testimonialsData = [
 export const PackageS = [
   new Package(
     "p1",
-    "Christmas Nile Cruises",
+    "Christmas Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -142,7 +142,7 @@ export const PackageS = [
   ),
   new Package(
     "p2",
-    "Christmas Nile Cruises",
+    "Christmas Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -154,7 +154,7 @@ export const PackageS = [
   ),
   new Package(
     "p3",
-    "Christmas Nile Cruises",
+    "Christmas Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -166,7 +166,7 @@ export const PackageS = [
   ),
   new Package(
     "p4",
-    "Christmas Nile Cruises",
+    "Christmas Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -178,7 +178,7 @@ export const PackageS = [
   ),
   new Package(
     "p5",
-    "Christmas Nile Cruises",
+    "Christmas Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -190,7 +190,7 @@ export const PackageS = [
   ),
   new Package(
     "p6",
-    "Christmas Nile Cruises",
+    "Christmas Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -203,7 +203,7 @@ export const PackageS = [
 
   new Package(
     "p7",
-    "Dahabiya Nile Cruises",
+    "Dahabiya Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -215,7 +215,7 @@ export const PackageS = [
   ),
   new Package(
     "p8",
-    "Dahabiya Nile Cruises",
+    "Dahabiya Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -227,7 +227,7 @@ export const PackageS = [
   ),
   new Package(
     "p",
-    "Dahabiya Nile Cruises",
+    "Dahabiya Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -239,7 +239,7 @@ export const PackageS = [
   ),
   new Package(
     "p10",
-    "Dahabiya Nile Cruises",
+    "Dahabiya Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -251,7 +251,7 @@ export const PackageS = [
   ),
   new Package(
     "p11",
-    "Dahabiya Nile Cruises",
+    "Dahabiya Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -263,7 +263,7 @@ export const PackageS = [
   ),
   new Package(
     "p12",
-    "Dahabiya Nile Cruises",
+    "Dahabiya Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -276,7 +276,7 @@ export const PackageS = [
 
   new Package(
     "p13",
-    "Lake Nasser Nile Cruises",
+    "Lake Nasser Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -288,7 +288,7 @@ export const PackageS = [
   ),
   new Package(
     "p14",
-    "Lake Nasser Nile Cruises",
+    "Lake Nasser Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -300,7 +300,7 @@ export const PackageS = [
   ),
   new Package(
     "p15",
-    "Lake Nasser Nile Cruises",
+    "Lake Nasser Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -312,7 +312,7 @@ export const PackageS = [
   ),
   new Package(
     "p16",
-    "Lake Nasser Nile Cruises",
+    "Lake Nasser Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -324,7 +324,7 @@ export const PackageS = [
   ),
   new Package(
     "p17",
-    "Lake Nasser Nile Cruises",
+    "Lake Nasser Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -336,7 +336,7 @@ export const PackageS = [
   ),
   new Package(
     "p18",
-    "Lake Nasser Nile Cruises",
+    "Lake Nasser Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -349,7 +349,7 @@ export const PackageS = [
 
   new Package(
     "p19",
-    "Luxor Aswan Nile Cruises",
+    "Luxor Aswan Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -361,7 +361,7 @@ export const PackageS = [
   ),
   new Package(
     "p20",
-    "Luxor Aswan Nile Cruises",
+    "Luxor Aswan Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -373,7 +373,7 @@ export const PackageS = [
   ),
   new Package(
     "p21",
-    "Luxor Aswan Nile Cruises",
+    "Luxor Aswan Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -385,7 +385,7 @@ export const PackageS = [
   ),
   new Package(
     "p22",
-    "Luxor Aswan Nile Cruises",
+    "Luxor Aswan Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -397,7 +397,7 @@ export const PackageS = [
   ),
   new Package(
     "p23",
-    "Luxor Aswan Nile Cruises",
+    "Luxor Aswan Sailling",
     defaultImage,
     "5 days",
     "Egypt",
@@ -409,7 +409,7 @@ export const PackageS = [
   ),
   new Package(
     "p24",
-    "Luxor Aswan Nile Cruises",
+    "Luxor Aswan Sailling",
     defaultImage,
     "7 days",
     "Egypt",
@@ -714,9 +714,9 @@ export const PackageToTravelpackaes = [
   ),
 ];
 export const ToursOfTyps = [
-  new ToursTyps("1","cruises", "Bucket List" ,"Egypt River" , "Nile Cruises" , "The best Nile Cruise trip with the best prices. Choose your cruise route from Luxor to Aswan or Cruise Lake Nasser.",["Luxor Aswan Nile Cruises", "Lake Nasser Nile Cruises","Dahabiya Nile Cruises" , "Christmas Nile Cruises",  ],PackageS ),
-  new ToursTyps("1","travel","Bucket List" ,"Egypt Travel" , "Packages  " ,
-   "Start your Trip by the ancient Giza Pyramids, Egyptian Museum and old Cairo then mix it with Nile Cruise from Luxor to Aswan, end your trip with Red Sea Relaxation  ",
-   ["Classical Egypt Travel Packages", "Christmas and New Year tours","Egypt Easter Vacations" , "Honeymoon Travel Packages",  ],PackageToTravelpackaes ),
+  new ToursTyps("1","Sailling", "Bucket List" ,"travel" , "Sailling" , "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",["Active sailing trips", "Wildlife watching","Trips with a twist" , "Life on board.",  ],PackageS ),
+  new ToursTyps("1","travel","Bucket List" ,"Travel" , "Packages  " ,
+   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore., end your trip with Red Sea Relaxation  ",
+   ["Classical Travel Packages", "Christmas New Year tours"," Easter Vacations" , "Honeymoon Travel",  ],PackageToTravelpackaes ),
   
 ];

@@ -56,7 +56,7 @@ function    PackageTyps({packages , type}) {
         />
       </div>
       <div className="  group w-full pt-10  md:pt-16 flex justify-center items-center  ">
-        <Link href={`/Egypt/${type}`}>
+        <Link href={`/Detinations/${type}`}>
         <button className=" wrapper w-[50%] md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden  ">
                  <span className="absolute w-0 top-0 left-0 b-b-width bg-[#ffc107] -z-10 h-full"></span>
                   See more

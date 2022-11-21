@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import partnersImage from "../public/assets/images/iata-new.png"
+import partnersImage from "../public/assets/images/cl-1.png"
 import HeaderSection from './helper/HeaderSection'
 function Partners() {
   return (

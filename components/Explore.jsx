@@ -16,27 +16,21 @@ function Explore() {
             {/* content  */}
             <div className="flex flex-col gap-4  p-7 bg-[#029e9d] mt-0 h-3/5 md:h-full md:w-2/4 md:py-20  md:gap-6  ">
               <h4 className="text-xl text-[#fff] text-center font-bold  capitalize font-serif md:text-2xl md:text-left ">
-                Best Selling Program in Egypt
+                Best Selling Program in the world
               </h4>
               <h2
                 className="text-2xl font-serif font-bold capitalize
              text-[#fdc703] text-center md:text-5xl md:leading-[3.5rem] md:font-extrabold  md:text-left "
               >
-                Cairo, Nile Cruise and Hurghada
+                Explore Your Life, Travel Where You Want!
               </h2>
 
               <p className=" text-[#fff] leading-6 text-center md:text-left">
-                Explore the Historical Cairo, Sail the Nile from Luxor to Aswan,
-                and relax on the red sea beaches. Travel Where You Want, we are
-                ready to help!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <p className=" hidden lg:block text-[#fff] leading-6 text-center md:text-left">
-                Explore the top sights of Egypt and do it all in a 12-day trip.
-                Start in Cairo and visit the Pyramids of Giza, the Egyptian
-                Museum, Khan El Khalili, and more. Fly to Aswan to see more.
-                Stay on board a Nile Cruise and explore the majestic attractions
-                of Egypt between Aswan and Luxor. End your tour with a relaxing
-                time on Hurghada beaches in the Red Sea.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                
               </p>
               <div className="  group flex justify-center items-center  md:justify-start ">
                 <button
