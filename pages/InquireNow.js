@@ -48,7 +48,7 @@ function InquireNow() {
     <div>
       <NavBar />
       <HeaderParts typeList="Inquire Now" />
-      <div className="container mx-auto pt-10">
+      <div className="container w-[70%] mx-auto pt-10">
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className="text-[#17233e] font-serif text-3xl capitalize text-center font-bold">
             Plan Your Next Trip!
@@ -69,13 +69,13 @@ function InquireNow() {
             {/* name and email */}
         <div className=" flex flex-col gap-4 md:flex-row  ">
                 {/* input neme  */}
-                <div class=" md:flex-1">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">neme</label>
+                <div className=" md:flex-1">
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">neme</label>
 
               <input
                 type="text"
                 id="name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  focus:outline-none"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  focus:outline-none"
                 placeholder="full neme"
                 {...register("Name", { required: true })}
               />
@@ -83,13 +83,13 @@ function InquireNow() {
 
             </div>
             {/* input Email */}
-            <div class="md:flex-1">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">Email</label>
+            <div className="md:flex-1">
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">Email</label>
 
               <input
                 type="email"
                 id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  focus:outline-none"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  focus:outline-none"
                 placeholder="Your Email"
                 {...register("Email", { required: true })}
 
@@ -102,7 +102,7 @@ function InquireNow() {
           <div className="flex flex-col gap-4 md:flex-row ">
               {/* input start date  */}
               <div className=" md:flex-1 ">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">start date</label>
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">start date</label>
               <input
                 type="text"
                 className=" form-control block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none "
@@ -118,7 +118,7 @@ function InquireNow() {
             </div>
             {/* input end date  */}
             <div className=" md:flex-1 ">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">end date</label>
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">end date</label>
 
               <input
                 type="text"
@@ -136,7 +136,7 @@ function InquireNow() {
            <div className="flex flex-col gap-4 md:flex-row ">
              {/* Selected Countery */}
              <div className=" md:flex-1">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">Nationailty</label>
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">Nationailty</label>
 
               <Controller
                 control={control}
@@ -157,7 +157,7 @@ function InquireNow() {
             </div>
             {/* Selected code  */}
             <div className="md:flex-1">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">code</label>
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">code</label>
 
               <Controller
                 control={control}
@@ -180,7 +180,7 @@ function InquireNow() {
            </div>
             {/* input what app number  */}
             <div className="">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">whate app number</label>
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">whate app number</label>
 
               <input
                 type="number"
@@ -241,7 +241,7 @@ function InquireNow() {
 
                 {/* textarea massage */}
                 <div className="flex flex-col ">
-            <label  class="block mb-2 text-2xl font-medium text-[#777] ">your massage</label>
+            <label  className="block mb-2 text-2xl font-medium text-[#777] ">your massage</label>
 
                 <textarea
                   id="message"

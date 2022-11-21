@@ -14,11 +14,11 @@ function Comments() {
       <h4 className="text-2xl text-[#17233e] font-serif capitalize font-bold py-4  border-b ">
         Showing 16 Verified Guest Comments
       </h4>
-      <div className=" relative flex flex-col md:flex-row gap-3">
+      <div className=" relative flex flex-col md:flex-row gap-3 md:mt-4">
         {/* arrow  */}
         <div
         style={{ borderWidth:"31px", borderStyle: "solid", borderColor: "transparent #e6eef5 transparent transparent"}}
-        className="  hidden md:block  absolute top-[12px] left-[40px]"></div>
+        className="  hidden md:block  absolute top-[12px] left-[50px]"></div>
         {/* img */}
         <div className="flex justify-center items-start  py-3 px-5">
           <Image
@@ -76,11 +76,11 @@ function Comments() {
 
         </div>
       </div>
-      <div className=" relative flex flex-col md:flex-row gap-3">
+      <div className=" relative flex flex-col md:flex-row gap-3 md:mt-4">
         {/* arrow  */}
         <div
         style={{ borderWidth:"31px", borderStyle: "solid", borderColor: "transparent #e6eef5 transparent transparent"}}
-        className="  hidden md:block  absolute top-[12px] left-[40px]"></div>
+        className="  hidden md:block  absolute top-[12px] left-[50px]"></div>
         {/* img */}
         <div className="flex justify-center items-start  py-3 px-5">
           <Image
@@ -138,11 +138,11 @@ function Comments() {
 
         </div>
       </div>
-      <div className=" relative flex flex-col md:flex-row gap-3">
+      <div className=" relative flex flex-col md:flex-row gap-3 md:mt-4">
         {/* arrow  */}
         <div
         style={{ borderWidth:"31px", borderStyle: "solid", borderColor: "transparent #e6eef5 transparent transparent"}}
-        className="  hidden md:block  absolute top-[12px] left-[40px]"></div>
+        className="  hidden md:block  absolute top-[12px] left-[50px]"></div>
         {/* img */}
         <div className="flex justify-center items-start  py-3 px-5">
           <Image

@@ -3,9 +3,9 @@ import Faq from "react-faq-component";
 
 const data = {
   rows: [
-    {
+    { 
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Charitable Giving
         </h2>
       ),
@@ -22,7 +22,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Prices:{" "}
         </h2>
       ),
@@ -35,7 +35,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Notes:{" "}
         </h2>
       ),
@@ -52,7 +52,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Payment:{" "}
         </h2>
       ),
@@ -66,7 +66,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Transportation:{" "}
         </h2>
       ),
@@ -81,7 +81,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Tour Guides:{" "}
         </h2>
       ),
@@ -96,7 +96,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Travelling with Children:{" "}
         </h2>
       ),
@@ -111,7 +111,7 @@ const data = {
     },
     {
       title: (
-        <h2 className="text-[#17233e] text-xl font-serif font-bold capitalize">
+        <h2 className="text-[#17233e] text-xl font-serif  py-3 capitalize">
           Wheelchair Travellers:{" "}
         </h2>
       ),

@@ -6,13 +6,13 @@ import Footer from "../../components/Footer";
 import HeaderDestination from "../../components/headers/HeaderDestination";
 import HeaderParts from "../../components/headers/HeaderParts";
 import NavBar from "../../components/NavBar";
-import imageDestination from "../../public/assets/images/trending-large.jpg";
 import { BsCheckLg } from "react-icons/bs";
 import { GrFormClose } from "react-icons/gr";
 import FormInquire from "../../components/helper/FormInquire";
 import { ToursOfTyps } from "../../data/dammyData";
 import SelectPackagess from "../../components/SelectPackagess";
 import PackageTyps from "../../components/PackageTyps";
+import Carousel from "../../components/headers/sliderImage/Carousel";
 
 function Destination() {
   return (
@@ -25,13 +25,8 @@ function Destination() {
         <div className="flex flex-col gap-3 col-start-1 col-end-6   w-full md:col-span-4">
           <HeaderDestination titel={"Egpyt tours"}  />
           <div className="container mx-auto md:w-full ">
-            <Image
-              src={imageDestination}
-              loading="lazy"
-              width={800}
-              height={500}
-              className="rounded-md"
-            />
+           
+            <Carousel/>
           </div>
           <div className="container mx-auto flex flex-col  gap-1">
             <h4 className="my-5 text-3xl font-serif font-bold text-[#17233e] ">

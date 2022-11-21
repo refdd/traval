@@ -21,7 +21,7 @@ function AddRevews() {
             <input
               type="text"
               id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 focus:outline-none"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 focus:outline-none"
               placeholder="Name"
               {...register("Name", { required: true })}
             />
@@ -35,7 +35,7 @@ function AddRevews() {
             <input
               type="email"
               id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 focus:outline-none"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 focus:outline-none"
               placeholder="email"
               {...register("Email", { required: true })}
             />
@@ -51,7 +51,7 @@ function AddRevews() {
               {...register("comment", { required: true })}
               id="message"
               rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
               placeholder="Your message..."
             ></textarea>
           </div>

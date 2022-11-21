@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import Slider from "react-slick";
+import imageDestination from "../../../public/assets/images/trending-large.jpg";
 import imageslider from "../../../public/assets/images/travel.png"
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -38,9 +39,10 @@ function Carousel() {
     <Slider {...settings}>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -49,9 +51,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -60,9 +63,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -71,9 +75,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -82,9 +87,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -93,9 +99,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -104,9 +111,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        
@@ -115,9 +123,10 @@ function Carousel() {
       </div>
       <div className='imageSlider justify-center items-center'>
        <Image
-       src={imageslider}
+       src={imageDestination}
        width={500}  
        height={500}  
+       className="rounded-lg"
        layout='intrinsic'
        />
        

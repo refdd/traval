@@ -91,27 +91,14 @@ function CardlistBlog({ packages, valueState }) {
                   <button
                     className={
                       desplaygrid
-                        ? "wrapper w-[60%]  group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden   "
+                        ? "wrapper   group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden   "
                         : "wrapper w-[40%] md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden   "
                     }>
                     <span className="absolute w-0 top-0 left-0 b-b-width bg-[#ffc107] -z-10 h-full"></span>
                     see more
                   </button>
                 </Link>
-                <div className="flex  justify-center items-center gap-7 ">
-                  <Image
-                    src={item?.imageSlag}
-                    alt="Picture of the author"
-                    width={70}
-                    height={70}
-                    layout={"intrinsic"}
-                    className="rounded-full"
-                    loading="lazy"
-                  />
-                  <span className="text-xl text-[#777] font-serif ">
-                    {item.slag}
-                  </span>
-                </div>
+               
               </div>
             </div>
           </div>

@@ -44,7 +44,7 @@ function    PackageTyps({packages , type}) {
         />
         <div
           ref={rowRef}
-          className="flex  items-center gap-5 overflow-x-hidden scrollbar-hide sspace-x-2.5 pl-4"
+          className="flex  items-center gap-5 overflow-x-scroll scrollbar-hide sspace-x-2.5 pl-1"
         >
         {/* {Blogs ? <BlogCard/> : !offerSection ? <PackageCard /> : <OfferPackageCard/>}       */}
         <CardPackageTypes packages={packages}/>
@@ -56,10 +56,10 @@ function    PackageTyps({packages , type}) {
         />
       </div>
       <div className="  group w-full pt-10  md:pt-16 flex justify-center items-center  ">
-        <Link href={`/Destination/${type}`}>
-        <button className=" wrapper w-full md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden  ">
+        <Link href={`/Egypt/${type}`}>
+        <button className=" wrapper w-[50%] md:w-auto group-hover:text-white bg-[#029e9d] px-4 py-3 rounded-2xl z-10 text-white overflow-hidden  ">
                  <span className="absolute w-0 top-0 left-0 b-b-width bg-[#ffc107] -z-10 h-full"></span>
-                  read more
+                  See more
                   </button>
         </Link>
               

@@ -39,12 +39,12 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className="text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                <Link href={`/Destination/travel`}>
+                <Link href={`/Egypt/travel`}>
                     <a>Traval Packages </a>
                   </Link>
                 </li>
                 <li className=" text-lg uppercase text-[#777] transition  hover:text-[#029e9d] ">
-                <Link href={`/Destination/cruises`}>
+                <Link href={`/Egypt/cruises`}>
                     <a>Egypt Cruises </a>
                   </Link>
                 </li>
@@ -81,18 +81,18 @@ function NavBar() {
                         </Link>
                     </li  >
                     <li className='border-b-2  text-left w-full p-2 uppercase transition-all hover:bg-[#cccccc] '>
-                        <Link href="/" >
+                        <Link href={`/Egypt/travel`} >
                             <a> Traval Packages </a>
                         </Link>
                     </li>
                     <li className='border-b-2 text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ' >
-                        <Link href="/" >
+                        <Link href={`/Egypt/cruises`}>
                             <a> egypt Cruises  </a>
                         </Link>
                     </li>
                     <li className='border-b-2  text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ' >
-                        <Link href="/" >
-                            <a> about  </a>
+                        <Link href={`/BlogList`} >
+                            <a> Blog  </a>
                         </Link>
                     </li>
                 </ul>

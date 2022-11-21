@@ -27,7 +27,7 @@ if(valueState == "price"){
     {
       gackageBeforeSort && gackageBeforeSort.map((item) =>(
         <div key={item.id} className={desplaygrid ? "flex flex-col gap-2 w-[90%]  md:w-[45%]   bg-slate-100 p-5 rounded-xl mt-5 "
-          :"flex flex-col md:flex-row gap-2 justify-center md:justify-start items-center w-[92%] mx-auto md:w-[90%] md:mx-4 bg-slate-100 p-5 rounded-xl mt-5 "
+          :"flex flex-col md:flex-row gap-2 justify-center md:justify-start items-center w-[92%] mx-auto md:w-[100%]   md:mx-4 bg-slate-100 p-5 rounded-xl mt-5 "
       }>
     {/* image */}
     <div className={desplaygrid ?"relative rounded-xl overflow-hidden w-full ":
@@ -54,7 +54,9 @@ if(valueState == "price"){
      <div className={desplaygrid ? "flex flex-col gap-2 justify-center items-center ":
         "flex flex-col gap-2 justify-center items-center md:justify md:items-start md:flex-1 " 
     }>
-      <h2 className="text-center md:text-left text-2xl capitalize font-serif "> {item.title}</h2>
+      <Link href={`/tour/${item.id}`}>
+      <h2 className="text-center md:text-left text-2xl capitalize font-serif cursor-pointer "> {item.title}</h2>
+      </Link>
      <p className="text-sm text-center md:text-left text-[#777] font-serif "> 6+ Days | Full Days tours</p>
         <h4 className="text-xl text-[#777] font-serif capitalize text-center md:text-left">{item.type}</h4>
         <p className="text-[#029e9d] text-center md:text-left text-lg font-serif ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, quo!</p>

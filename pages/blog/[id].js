@@ -25,31 +25,31 @@ import { useStateContext } from "../../contexts/ContextProvider";
 import Explore from "../../components/Explore";
 import FandQ from "../../components/FandQ";
 import Footer from "../../components/Footer";
+import HeaderSingelBlog from "../../components/parts/HeaderSingelBlog";
+import DescSingleBlog from "../../components/parts/DescSingleBlog";
+import RelatedTous from "../../components/parts/RelatedTous";
 
 function SingelBlog() {
   const {isClicked} =useStateContext()
   return (
     <div>
-      <BottomInquire />
       <NavBar />
       <HeaderParts typeList={"single tour"} />
+       
+       <HeaderSingelBlog/>   
       <div className=" grid grid-cols-1 md:grid-cols-6 gap-3  ">
         {/* left content side */}
         <div className="flex flex-col gap-3 col-start-1 col-end-6   w-full md:col-span-4">
-          <HeaderDestination
-            titel={"Egpyt tours"}
-            location="Greater London, United Kingdom"
-            reviews={"(1,186 Reviews)"}
-          />
-      
-          <Reviews/> 
+         
+          <DescSingleBlog />
           <Comments/>
           <AddRevews/> 
         
         </div>
         {/* right form iqurire */}
-        <div className="  w-full col-start-1 col-end-6  md:col-start-5 md:col-end-7   ">
-          <FormInquire />
+        <div className="w-full col-start-1 col-end-6  md:col-start-5 md:col-end-7   ">
+          
+          <RelatedTous />
         </div>
       </div>
       <Explore />

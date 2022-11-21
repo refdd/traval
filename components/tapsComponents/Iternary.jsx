@@ -4,27 +4,29 @@ const data = {
  
     rows: [
       {
-        title: "Day 1 - Barcelona - Zaragoza - Madrid",
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-                ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-                In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-                Fusce sed commodo purus, at tempus turpis.`,
+        title: <h2 className="text-[#17233e] text-lg  py-3 font-serif capitalize">Day 1 - Barcelona - Zaragoza - Madrid </h2> ,
+        content: <p  className="text-[#777] text-lg font-serif capitalize ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+        ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
+        In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
+        Fusce sed commodo purus, at tempus turpis</p>,
       },
       {
-        title: "Day 2 - Zurich - Biel/Bienne - Neuchatel - Geneva",
-        content:
-          "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+        title: <h2 className="text-[#17233e] text-lg  py-3 font-serif  capitalize">Day 2 - Zurich - Biel/Bienne - Neuchatel - Geneva </h2> ,
+        content: <p  className="text-[#777] text-lg font-serif capitalize ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+        ultricieis</p>
+         ,
       },
       {
-        title: "Day 3 - Enchanting Engelberg",
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-              Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-              Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-              Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: <h2 className="text-[#17233e] text-lg  py-3 font-serif  capitalize">Day 3 - Enchanting Engelberg </h2>,
+        content: <p  className="text-[#777] text-lg font-serif capitalize ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+        ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
+        In maximus cursus ls</p>,
       },
       {
-        title: "Day 4 - Barcelona - Zaragoza - Madrid",
-        content: <p>current version is 1.2.1</p>,
+        title: <h2 className="text-[#17233e] text-lg  py-3 font-serif  capitalize">Day 4 - Barcelona - Zaragoza - Madrid </h2> ,
+        content: <p  className="text-[#777] text-lg font-serif capitalize ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aene
+        </p> ,
       },
   
     ],
@@ -32,6 +34,7 @@ const data = {
       // bgColor: 'white',
       rowTitleColor: "#17233e",
       titleTextSize: '48px',
+      rowContentPaddingBottom: '20px',
       // rowContentColor: 'grey',
       // arrowColor: "red",
     }
@@ -51,7 +54,9 @@ function Iternary() {
             <p className='text-[#777] text-lg font-serif capitalize  leading-7'>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts 
                 of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
        </div>
+       <div className='pt-5'>
        <Faq data={data}  config={config} />
+       </div>
       
     </div>
   )
